@@ -1,0 +1,143 @@
+// Define mixins for different screen sizes
+@mixin mobile {
+    @media screen and (max-width: 480px) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin laptop {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+  
+  // Define shades of blue
+  $blue: #87c9ef;
+  $lightBlue: #96cbef;
+  $darkBlue: #2a78ad;
+  
+  // Define white color
+  $white: #ffffff;
+  
+  // Main styles
+  .formContainer {
+    background-color: $blue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .formWrapper {
+      background-color: $white;
+      padding: 20px 60px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center ;
+      opacity: 0.9;
+      transition: all 1s ease ;
+  
+      &:hover {
+        border-radius: 50px;
+        box-shadow: 0 0 100px rgb(231, 195, 174);
+        opacity: 1;
+      }
+  
+      .logo {
+        color: $darkBlue; // darker shade for logo
+        font-weight: bold;
+        font-size: 24px;
+  
+        &:hover {
+          color: darken($darkBlue, 10%);
+        }
+      }
+  
+      .title {
+        color: $darkBlue; // darker shade for title
+        font-size: 12px;
+  
+        &:hover {
+          color: darken($darkBlue, 10%);
+        }
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+  
+        input {
+          
+          padding: 15px;
+          border: 2px solid $darkBlue; // make border more bold
+          width: 250px;
+          transition: all 1s ease ;
+  
+          border-radius: 300px; // add border radius
+          &::placeholder {
+            color: darken($darkBlue, 30%);
+          }
+  
+          &:hover {
+            background-color: #d3eefb;
+            border-radius: 10px;
+
+          }
+        }
+  
+        button {
+          background-color: $darkBlue; // darker shade for button
+          color: $white;
+          padding: 5px;
+          font-weight: bold;
+          border: none;
+          cursor: pointer;
+          border-radius: 50;
+          border-radius: 20px;
+          transition: all 1s ease ;
+  
+          &:hover {
+            background-color: #b4fede ;
+            border-radius: 5px;
+            color: #278ccf;
+      
+          }
+        }
+  
+        label {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: darken($darkBlue, 30%);
+          font-size: 12px;
+          cursor: pointer;
+  
+          &:hover {
+            color: darken($darkBlue, 10%);
+          }
+  
+          img {
+            width: 32px;
+          }
+        }
+      }
+      p {
+        color: $darkBlue; // darker shade for paragraph
+        font-size: 12px;
+        margin-top: 10px;
+  
+        &:hover {
+          color: darken($darkBlue, 10%);
+        }
+      }
+    }
+  }
+  
