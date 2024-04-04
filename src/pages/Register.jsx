@@ -63,22 +63,27 @@ const Register = () => {
     <div className="formContainer">
       <div className="formWrapper">
         <span className="logo">Gulu Gulu</span>
-        <span className="title">Register</span>
+        <span className="title">Sign Up</span>
         <form onSubmit={handleSubmit}>
-          <input required type="text" placeholder="display name" />
-          <input required type="email" placeholder="email" />
-          <input required type="password" placeholder="password" />
+          <input required type="text" placeholder="Avatar Name" />
+          <input required type="email" placeholder="Email" />
+          <input required type="password" placeholder="Password (*minimum 6 digit)" />
           <input required style={{ display: "none" }} type="file" id="file" />
           <label htmlFor="file">
             <img src={Add} alt="" />
-            <span>Add an avatar</span>
+            <span>Add An Avatar Profile</span>
           </label>
           <button disabled={loading}>Sign up</button>
-          {loading && "Uploading and compressing the image please wait..."}
-          {err && <span>Something went wrong</span>}
+          {loading && "Creating An Avatar please wait..."}
+          {err && <span></span>}
+          {err && <span>Make Sure That Your Password Content Atlest 6 digit</span>}
+          {err && <span>Make Sure That You have Added Profile</span>}
+          {err && <span>Try With unique Avatar Name</span>}
+          {err && <span>Try With Different Email</span>}
+          
         </form>
         <p>
-          You do have an account? <Link to="/login">Login</Link>
+          You do have an Avatar? <Link to="/login">Login</Link>
         </p>
       </div>
     </div>
