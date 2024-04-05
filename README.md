@@ -1,6 +1,6 @@
 # Gulu Gulu Private Chat App
 
-#### Collabration with [Miss Mehak Jamadar]{ https://github.com/kaori1302 }
+#### Collabration with Miss Mehak Jamadar / [@kaori1302]( https://github.com/kaori1302 )
 
 ## Gulu Gulu is Currently in [Testing Mode](https://gulugulu-1302.netlify.app/)
 
