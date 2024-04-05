@@ -190,6 +190,7 @@ $white: #ffffff;
        }
    
        .sidebar {
+      overflow: auto;
       border-radius: 30px;
       flex: 1;
       background-color: #ffffffcd;
@@ -321,7 +322,7 @@ $white: #ffffff;
       }
       .search {
         padding: 10px;
-      
+        
         .searchForm {
           padding: 10px;
       }
@@ -378,6 +379,7 @@ $white: #ffffff;
         color: rgb(0, 0, 0);
         cursor: pointer;
         transition: all 0.5s ease;
+
         img {
           width: 50px;
           height: 50px;
@@ -405,6 +407,20 @@ $white: #ffffff;
             color: rgb(23, 23, 23);
           }
         }
+       .lastMessage{
+          width: 200px; /* Adjust width as needed */
+          height: 20px; /* Adjust height as needed */
+          overflow: hidden; /* Hide overflow content */
+          transition: all 1s ease;
+        }
+        .lastMessage:hover{
+          width: 500px; /* Adjust width as needed */
+          height: 100px;
+          overflow-y: scroll; /* Adjust height as needed */
+          overflow-x: hidden; /* Hide overflow content */
+        }
+       
+      
       }
     }
 
@@ -455,7 +471,7 @@ $white: #ffffff;
         background-color: rgb(236, 247, 254);
         padding: 10px;
         height: calc(100% - 160px);
-        overflow: scroll;
+        overflow: auto;
         transition: all ss ease;
 
         .message {
