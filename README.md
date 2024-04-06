@@ -2,9 +2,8 @@
 
 #### Collabration with Miss Mehak Jamadar / [@kaori1302]( https://github.com/kaori1302 )
 
+##### Designing / UI in process 
 ## Gulu Gulu is Currently [Live in Testing Mode](https://gulugulu-1302.netlify.app/)
-#### Designing / UI in process .
-
 
 ## Description
 Gulu Gulu is a web application facilitating secure and private communication between individuals. It leverages modern web technologies to provide a user-friendly and interactive chat experience.
