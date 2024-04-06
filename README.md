@@ -2,7 +2,7 @@
 
 #### Collabration with Miss Mehak Jamadar / [@kaori1302]( https://github.com/kaori1302 )
 
-## Gulu Gulu is Currently in [Testing Mode](https://gulugulu-1302.netlify.app/)
+## Gulu Gulu is Currently [Live in Testing Mode](https://gulugulu-1302.netlify.app/)
 
 
 ## Description
